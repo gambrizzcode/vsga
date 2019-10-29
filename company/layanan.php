@@ -37,7 +37,7 @@
   <body>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
   <h5 class="my-0 mr-md-auto font-weight-normal">Prudenciol</h5>
-  <a class="btn btn-outline-primary" href="index.php">Home</a>
+  <a class="btn btn-outline-secondary" href="index.php">Home</a>
 </div>
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
@@ -59,7 +59,7 @@
           <li>Anda Teriak Kami Tutup Telinga</li>
           <li>Anda Emosi Kami Tampar</li>
         </ul>
-        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Pilih</button>
+        <button type="button" class="btn btn-lg btn-block btn-outline-secondary">Pilih</button>
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
@@ -74,7 +74,7 @@
           <li>Anda Nangis Kami Usap</li>
           <li>Anda Sedih Kami Peluk</li>
         </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Hayuukk</button>
+        <button type="button" class="btn btn-lg btn-block btn-secondary">Hayuukk</button>
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
@@ -89,7 +89,7 @@
           <li>Cashback 10%</li>
           <li>Belum Puas ? Cashback 20%</li>
         </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Budyall</button>
+        <button type="button" class="btn btn-lg btn-block btn-secondary">Budyall</button>
       </div>
     </div>
   </div>

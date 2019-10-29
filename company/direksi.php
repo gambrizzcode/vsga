@@ -44,7 +44,7 @@
           <p class="text-muted">Kami Adalah perusahaan parodi abal abal yang bergerak dibidang curhat menyurhat. Kami melayani dengan sepenuh hati ocehan dan gibahan para klien kami. Kami pun sebenarnya tidak bisa menyelesaikan masalah mereka, akan tetapi setidaknya kami bisa memeluk mereka. eaaa.</p>
         </div>
         <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Mari Ngobrol Dulu</h4>
+          <h4 class="text-white">Mari Kenalan Dulu</h4>
           <ul class="list-unstyled">
             <br>
             <a href="kontak.php" class="btn btn-light">Contact Us</a>
@@ -70,7 +70,7 @@
   <section class="jumbotron text-center">
     <div class="container">
       <h1 class="jumbotron-heading">Direksi dan Staff</h1>
-      <p class="lead text-muted">Mereka adalah orang orang yang penuh dengan kesabaran, mendengarkan semua keluhan kalian yang tak jelas apa sebenarnya inti dari curhatan tersebut. Salut untuk mereka yang masih mau mendengarkan.</p>
+      <p class="lead text-muted">Mereka adalah orang orang yang penuh dengan kesabaran, mendengarkan semua keluhan kalian yang tak jelas apa sebenarnya inti dari curhatan tersebut. Salut untuk mereka yang masih mau mendengarkan. eaaa.</p>
     </div>
   </section>
 
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Foto Profil</text></svg>
+            <img src="images/img1c.jpg" class="bd-placeholder-img card-img-top" height="225" width="100%" role="img">
             <div class="card-body">
               <p class="card-text">Beliau adalah sosok panutan kami, sosok yang kami idam idamkan dalam kehidupan sehari hari kami.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -94,7 +94,7 @@
         </div>
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Foto Profil</text></svg>
+            <img src="images/img2c.jpg" class="bd-placeholder-img card-img-top" height="225" width="100%" role="img">
             <div class="card-body">
               <p class="card-text">Dengan kemampuan kepekaan yang overpower. Beliau peka dengan siapapun dan dapat memberi nasihat terbaik.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -108,7 +108,7 @@
         </div>
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Foto Profil</text></svg>
+            <img src="images/img3c.png" class="bd-placeholder-img card-img-top" height="225" width="100%" role="img">
             <div class="card-body">
               <p class="card-text">Karyawan Multitalenta bahkan melebihi talenta dari CEO kami dan pekanya melebihi manager kami. Staff Terbaik.</p>
               <div class="d-flex justify-content-between align-items-center">

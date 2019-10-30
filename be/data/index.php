@@ -15,11 +15,15 @@ session_start();
 
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-12">
 
 			<br>
 			<h2 align="center">Data Mahasiswa</h2>
 			<hr>
+
+			<div align="right"><button type="button" name="tambah" style="width: 10%" class="btn btn-primary" onclick="location='inputan.php'">Tambah Data</button></div>
+
+			<br>
 
 			<?php 
 			if(isset($_SESSION['pesan'])){
@@ -40,8 +44,10 @@ session_start();
 						<th>NIM</th>
 						<th>Nama</th>
 						<th>Gender</th>
-						<th>Jurusan</th>
+						<th>Agama</th>
 						<th>Alamat</th>
+						<th>Jurusan</th>
+						<th>Sekolah Asal</th>
 						<th>Action</th>
 					</tr>
 				</thead>
@@ -56,11 +62,57 @@ session_start();
 						<td><?=$row['nim']?></td>
 						<td><?=$row['nama']?></td>
 						<td><?=$jk?></td>
-						<td><?=$row['jurusan']?></td>
+						<td><?=$row['agama']?></td>
 						<td><?=$row['alamat']?></td>
+						<td><?=$row['jurusan']?></td>
+						<td><?=$row['sekolah_asal']?></td>
 						<td>
-							<a href="editan.php?id_mhs=<?=$row['id_mhs']?>" class="btn btn-link">EDIT</a> | 
-							<a href="hapus.php?id_mhs=<?=$row['id_mhs']?>" class="btn btn-link">HAPUS</a>
+							<button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#modaledit<?php echo $row['id_mhs'];?>">EDIT</button>
+
+							<div class="modal fade" id="modaledit<?php echo $row['id_mhs'];?>" tabindex="-1" role="dialog" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalCenterTitle">Konfirmasi</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<center>
+												<h2>Yakin Edit Data Ini ?</h2> <br>
+
+												<a href="editan.php?id_mhs=<?=$row['id_mhs']?>" class="btn btn-warning btn-block">EDIT</a> 
+												<button type="button" class="btn btn-outline-secondary btn-block" data-dismiss="modal" aria-label="close">CANCEL</button>
+											</center>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#modalhapus<?php echo $row['id_mhs'];?>">HAPUS</button>
+
+							<div class="modal fade" id="modalhapus<?php echo $row['id_mhs'];?>" tabindex="-1" role="dialog" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalCenterTitle">Konfirmasi</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<center>
+												<h2>Yakin Hapus Data Ini ?</h2> <br>
+
+												<a href="hapus.php?id_mhs=<?=$row['id_mhs']?>" class="btn btn-danger btn-block">HAPUS</a> 
+												<button type="button" class="btn btn-outline-secondary btn-block" data-dismiss="modal" aria-label="close">CANCEL</button>
+											</center>
+										</div>
+									</div>
+								</div>
+							</div>
+
 						</td>
 					</tr>
 
@@ -68,14 +120,12 @@ session_start();
 				</tbody>
 			</table>
 
-			<hr>
-
-			<button type="button" name="tambah" class="btn btn-primary" onclick="location='inputan.php'">Tambah Data</button>
-
 		</div>
 	</div>
 </div>
 
+<script src="../../bootstrap/js/jquery-3.3.1.slim.min.js"></script>
 <script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="../../bootstrap/js/popper.min.js"></script>
 </body>
 </html>

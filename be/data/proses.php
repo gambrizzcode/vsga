@@ -3,13 +3,15 @@
 include 'koneksi.php';
 session_start();
 
-$nim 		= $_POST['nim'];
-$nama 		= $_POST['nama'];
-$jk 		= $_POST['jk'];
-$jurusan 	= $_POST['jurusan'];
-$alamat 	= $_POST['alamat'];
+$nim 			= $_POST['nim'];
+$nama 			= $_POST['nama'];
+$jk 			= $_POST['jk'];
+$jurusan 		= $_POST['jurusan'];
+$alamat 		= $_POST['alamat'];
+$agama 			= $_POST['agama'];
+$sekolah_asal 	= $_POST['sekolah_asal'];
 
-$quer = mysqli_query($koneksi,"INSERT INTO mahasiswa VALUES('0','$nim','$nama','$jk','$jurusan','$alamat')");
+$quer = mysqli_query($koneksi,"INSERT INTO mahasiswa VALUES('0','$nim','$nama','$jk','$jurusan','$alamat','$agama','$sekolah_asal')");
 
 if ($quer == true) {
 	$_SESSION['pesan'] = 'Data Berhasil di Insert !';

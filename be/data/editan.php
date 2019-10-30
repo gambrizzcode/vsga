@@ -17,7 +17,7 @@ $id_mhs = $_GET['id_mhs'];
 $mahasiswa = mysqli_query($koneksi,"SELECT * FROM mahasiswa WHERE id_mhs = '$id_mhs'");
 $row = mysqli_fetch_array($mahasiswa);
 
-$jurusan = array('TEKNIK INFORMATIKA','TEKNIK KOMPUTER','MANAJEMEN INFORMATIKA');
+// $jurusan = array('TEKNIK INFORMATIKA','TEKNIK KOMPUTER','MANAJEMEN INFORMATIKA');
 
 function active_radio_button($value,$input){
 	$result = $value==$input ? 'checked' : '';
@@ -66,6 +66,27 @@ function active_radio_button($value,$input){
 				</div>
 
 				<div class="form-group row">
+					<label class="col-md-2 offset-md-2">Agama</label>
+					<div class="col-md-6">
+						<select name="agama" class="form-control">
+							<option <?php if($row['agama'] == "ISLAM"){echo "selected";}else{} ?> value="ISLAM">ISLAM</option>
+							<option <?php if($row['agama'] == "KATHOLIK"){echo "selected";}else{} ?> value="KATHOLIK">KATHOLIK</option>
+							<option <?php if($row['agama'] == "PROTESTAN"){echo "selected";}else{} ?> value="PROTESTAN">PROTESTAN</option>
+							<option <?php if($row['agama'] == "HINDU"){echo "selected";}else{} ?> value="HINDU">HINDU</option>
+							<option <?php if($row['agama'] == "BUDDHA"){echo "selected";}else{} ?> value="BUDDHA">BUDDHA</option>
+							<option <?php if($row['agama'] == "KONG HU CU"){echo "selected";}else{} ?> value="KONG HU CU">KONG HU CU</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label class="col-md-2 offset-md-2">Alamat</label>
+					<div class="col-md-6">
+						<textarea name="alamat" class="form-control"><?php echo $row['alamat']; ?></textarea>
+					</div>
+				</div>
+
+				<div class="form-group row">
 					<label class="col-md-2 offset-md-2">Jurusan</label>
 					<div class="col-md-6">
 						<select name="jurusan" class="form-control">
@@ -82,9 +103,9 @@ function active_radio_button($value,$input){
 				</div>
 
 				<div class="form-group row">
-					<label class="col-md-2 offset-md-2">Alamat</label>
+					<label class="col-md-2 offset-md-2">Sekolah Asal</label>
 					<div class="col-md-6">
-						<textarea name="alamat" class="form-control"><?php echo $row['alamat']; ?></textarea>
+						<input type="text" name="sekolah_asal" class="form-control" value="<?php echo $row['sekolah_asal']; ?>">
 					</div>
 				</div>
 

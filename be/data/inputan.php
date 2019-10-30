@@ -51,6 +51,27 @@ include 'koneksi.php';
 				</div>
 
 				<div class="form-group row">
+					<label class="col-md-2 offset-md-2">Agama</label>
+					<div class="col-md-6">
+						<select name="agama" class="form-control">
+							<option value="ISLAM">ISLAM</option>
+							<option value="KATHOLIK">KATHOLIK</option>
+							<option value="PROTESTAN">PROTESTAN</option>
+							<option value="HINDU">HINDU</option>
+							<option value="BUDDHA">BUDDHA</option>
+							<option value="KONG HU CU">KONG HU CU</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label class="col-md-2 offset-md-2">Alamat</label>
+					<div class="col-md-6">
+						<textarea name="alamat" class="form-control"></textarea>
+					</div>
+				</div>
+
+				<div class="form-group row">
 					<label class="col-md-2 offset-md-2">Jurusan</label>
 					<div class="col-md-6">
 						<select name="jurusan" class="form-control">
@@ -67,25 +88,46 @@ include 'koneksi.php';
 				</div>
 
 				<div class="form-group row">
-					<label class="col-md-2 offset-md-2">Alamat</label>
+					<label class="col-md-2 offset-md-2">Sekolah Asal</label>
 					<div class="col-md-6">
-						<textarea name="alamat" class="form-control"></textarea>
+						<input type="text" name="sekolah_asal" class="form-control">
 					</div>
 				</div>
 
 				<div class="form-group row">
 					<label class="col-md-2 offset-md-2"></label>
 					<div class="col-md-3">
-						<input type="submit" name="submit" class="btn btn-primary btn-block" value="Simpan"> 
-						
+						<button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalsimpan">Simpan</button>
+
+						<div class="modal fade" id="modalsimpan" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalCenterTitle">Konfirmasi</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<center>
+											<h2>Yakin Simpan Data Ini ?</h2> <br>
+
+											<input type="submit" name="submit" class="btn btn-primary btn-block" value="SIMPAN">  
+											<button type="button" class="btn btn-outline-secondary btn-block" data-dismiss="modal" aria-label="close">CANCEL</button>
+										</center>
+									</div>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 
 				<div class="form-group row">
 					<label class="col-md-2 offset-md-2"></label>
 					<div class="col-md-6">
-						<input type="reset" name="reset" class="btn btn-secondary" value="Ulangi">
-						<button type="button" name="kembali" class="btn btn-secondary" onclick="location='index.php'">Kembali</button>
+						<input type="reset" name="reset" class="btn btn-outline-secondary" value="Ulangi">
+						<button type="button" name="kembali" class="btn btn-outline-secondary" onclick="location='index.php'">Kembali</button>
 					</div>
 				</div>
 
@@ -95,6 +137,8 @@ include 'koneksi.php';
 	</div>
 </div>
 
+<script src="../../bootstrap/js/jquery-3.3.1.slim.min.js"></script>
 <script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="../../bootstrap/js/popper.min.js"></script>
 </body>
 </html>

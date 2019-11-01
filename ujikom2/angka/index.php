@@ -23,6 +23,7 @@ if (isset($_POST['submit'])) {
 	$split = str_split($angka);
 
 	// array diurutkan
+	// tidak wajib
 	sort($split);
 
 	// menghitung isi array yang sama

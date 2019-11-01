@@ -59,7 +59,24 @@ if (isset($_SESSION['nik'])) {
           <div class="card shadow mb-4">
             <div class="card-body">
               <div class="table-responsive">
-               
+               <table class="table table-hovered table-bordered" id="dataTabel" width="100%" cellspacing="0">
+                 <thead>
+                   <tr>
+                     <th>#</th>
+                     <th>NIK</th>
+                     <th>Nama</th>
+                     <th>Tempat, Tanggal Lahir</th>
+                     <th>Email</th>
+                     <th>Posisi</th>
+                     <th>Action</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                  <tr>
+                    
+                  </tr>
+                 </tbody>
+               </table>
               </div>
             </div>
           </div>
@@ -71,7 +88,11 @@ if (isset($_SESSION['nik'])) {
       <!-- End of Main Content -->
 
       <?php include 'ffooter.php'; ?>
-
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('#dataTabel').DataTable();
+        });
+      </script>
 </body>
 
 </html>

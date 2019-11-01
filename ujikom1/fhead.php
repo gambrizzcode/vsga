@@ -1,4 +1,4 @@
-<link rel="icon" href="img/favicon.png">
+  <link rel="icon" href="img/favicon.png">
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
